@@ -3,12 +3,17 @@ package question;
 public class Exercise04 {
 
 	public static void main(String[] args) {
+		while(true) {
+			int x=(int)(Math.random()*6)+1; 	//1ë¶€í„° 6ê¹Œì§€ì˜ ëœë¤í•¨ìˆ˜(ì£¼ì‚¬ìœ„ 1)
+			int y=(int)(Math.random()*6)+1;		//1ë¶€í„° 6ê¹Œì§€ì˜ ëœë¤í•¨ìˆ˜(ì£¼ì‚¬ìœ„ 2)
+			System.out.println("("+x+")"+", ("+y+")");
 		
-		int x=(int)(Math.random()*6)+1; 	//·£´ı ¼ıÀÚ ¸¸µé¾úÀ½.
-		while(x+=5) {
-			
+			if(x+y==5) {
+				break;
+			}
 		}
-		System.out.println(result);
+		
+		 //System.out.println("("+x+")"+", ("+y+")");
 	}
 
-}b 
+}

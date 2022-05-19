@@ -1,10 +1,14 @@
 package question;
-//1ºÎÅÍ 100±îÁö Á¤¼ö Áß 3ÀÇ ¹è¼ö ÃÑÇÕÀ» ±¸ÇÏ´Â ¹®Á¦
+//1ë¶€í„° 100ê¹Œì§€ì˜ ì •ìˆ˜ ì¤‘ 3ì˜ ë°°ìˆ˜ì˜ ì´í•©êµ¬í•˜ê¸°
 public class Exercise03 {
 	public static void main(String[]args) {
 		int result=0;
+		
 		for(int i=1;i<=100;i++) {
-			result+= 3*i;
+			//result+= 3*i; 		// ì´ë ‡ê²Œí•˜ë©´ ë‹¤ìŒê°’ì´ iëŠ” 2ê°€ ì•„ë‹ˆë¼ 4ê°€ ë˜ê¸° ë•Œë¬¸ì— 3ì˜ ë°°ìˆ˜ê°€ ë‚˜ì˜¤ì§€ ì•ŠëŠ”ë‹¤.
+			if(i%3==0) {
+				result+=i;
+			}
 		}
 		System.out.println(result);
 	}
