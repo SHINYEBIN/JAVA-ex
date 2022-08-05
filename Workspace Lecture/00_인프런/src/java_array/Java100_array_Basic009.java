@@ -5,7 +5,7 @@ package java_array;
 
 
 // [!] : 배열 복사하기
-// arraycopy() 메서드 사용 --> 사용법 --> System.arraycopy(원본배열명,???,복사배열명,???,길이);
+// arraycopy() 메서드 사용 --> 사용법 --> System.arraycopy(원본배열명, 복사시작할 부분 인덱스,복사배열명, 덮어쓰기 당할 부분 인덱스,길이);
 import java.util.Arrays;
 public class Java100_array_Basic009{
 	public static void main(String[] args) {
