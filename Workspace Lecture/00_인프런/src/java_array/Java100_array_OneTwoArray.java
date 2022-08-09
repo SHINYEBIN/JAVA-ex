@@ -65,19 +65,50 @@ public class Java100_array_OneTwoArray {
 		}
 		
 		// [8] : charAt() 메서드 사용 --> 해당 인덱스에 있는 값을 반환 --> 단어를 char 배열에 한글자씩 저장할 수 있음.
-		String[] strAr= {"shin","ye","bin"};
+		String[] strAr= {"shin","yee","bin"};
 		System.out.println(strAr[0]); //
 		System.out.println(strAr[0].charAt(3)); //n
 		System.out.println(strAr[1].charAt(1)); //e
 		System.out.println(strAr[2].charAt(2)); //n
 		
 		
-				
+		// [9] : 반복문에서 charAt() 메서드 사용
+		// [9-1] 잘못된 예1
+		for(int i=0;i<strAr.length;i++) {
+			System.out.println(strAr[i].charAt(i)); // s e n
+		}
 		
+		// [9-2] : 잘못된 예2
+		for(int i=0;i<strAr.length;i++) {
+			for(int j=0;j<strAr.length;j++) {
+				System.out.println(strAr[i].charAt(j));
+			}
+		}
+		 
+		// [9-3]
+		System.out.println(strAr.length);
+		//System.out.println(strAr[0].length); // ERROR
+		System.out.println(strAr[0].length()); // SHIN --> 4
 		
+		for(int i=0;i<strAr.length;i++) {
+			for(int j=0;j<strAr[i].length();j++) {
+				System.out.print(strAr[i].charAt(j));
+			}
+		System.out.println(" ");
+		}
 		
+		// [10] : length vs length()
+		// length : 배열의 길이를 구해주는 거 
+		// length(): 문자열의 길이를 구해주는 거
 		
+		int[]aaa=new int[10];
+		System.out.println(aaa.length); // 10
 		
+		String bbb= "Welcome to Seoul";
+		System.out.println(bbb.length()); // 16
 		
+
+		
+
 	}
 }
