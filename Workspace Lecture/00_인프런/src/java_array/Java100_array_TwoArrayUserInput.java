@@ -25,36 +25,32 @@ public class Java100_array_TwoArrayUserInput {
 		
 		// [5] : 2차원 배열 요소 --> 사용자가 입력하는 값으로 셋팅
 		for(int i=0;i<R;i++) {
-			System.out.println(i+"번째 행에 입력할 문자 5개를 차례대로 입력하고 [Enter] 치세요.");
-			strAr=scan.next();
+			System.out.println((i+1)+"번째 행에 입력할 문자"+C+"개를 차례대로 입력하고 [Enter] 치세요.");
+			strAr[i]=scan.next();
 			for(int j=0;j<C;j++) {
-				gameMap[i][j]=strAr[i].charAt(j);
+				gameMap[i][j]=strAr[i].charAt(j); //j 인덱스에 있는 값을 하나씩 가져와서 --> gameMap 좌표에 셋팅.
+				
 			}
+		}
+		
+		// [6] : 2차원 배열에 들어있는 값 출력하기
+		System.out.println(strAr); // 주소값
+		System.out.println(strAr[0]); // KOR
+		System.out.println(strAr[1]); // USA
+		
+		System.out.println("=========================================================");
+		
+		for(int i=0;i<R;i++) {
+			for(int j=0;j<C;j++) {
+				System.out.print(gameMap[i][j]);
+			}
+			System.out.println();
 		}
 		
 		
 		
-		// 이건 내 방식
-		Scanner sc=new Scanner(System.in);
-		System.out.println("행의 갯수를 입력하고 [Enter] 치세요");
-		int a=sc.nextInt();
-		System.out.println("열의 갯수를 입력하고 [Enter] 치세요");
-		int b=sc.nextInt();
-		System.out.println("1번째 행에 입력할 문자 3개를 차례대로 입력하고 [Enter] 치세요");
-		String c=sc.next();
-		System.out.println("2번째 행에 입력할 문자 3개를 차례대로 입력하고 [Enter] 치세요");
-		String d=sc.next();
-		System.out.println("3번째 행에 입력할 문자 3개를 차례대로 입력하고 [Enter] 치세요");
-		String e=sc.next();
 		
-		for(int i=0;i<a;i++) {
-			for(int j=0;j<b;j++) {
-				System.out.println(c);
-				System.out.println(d);
-				System.out.println(e);
-			}
-			System.out.println(); 
-		}
+		
 		
 		
 	}
